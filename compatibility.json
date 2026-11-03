@@ -1,5 +1,5 @@
 {
-  "horizon_revision": "ba6344a59cb9e755b730dcf02285fc0d33b97d3c",
+  "horizon_revision": "f42ef42",
   "horizon_mixins_revision": "d9c83d7",
-  "note": "Pinned to Nightly 2026-10-30 from the official template. Update both revisions and source hashes when moving to a newer Nightly."
+  "note": "Pinned to Nightly 2026-11-03 · f42ef42. Update both revisions and source hashes when moving to a newer Nightly. You may need a newer horizon-mixins revision — check the official template or native-mods docs."
 }
