@@ -204,7 +204,7 @@ pub fn option_categories() -> &'static [(&'static str, &'static [(&'static str, 
         ("HUD", &[
             ("show_fps", "Show FPS"),
             ("show_coords", "Show coordinates"),
-            ("show_light_level", "Show limon level"),
+            ("show_light_level", "Show light level"),
             ("reduced_toasts", "Fewer toasts"),
         ]),
     ]
