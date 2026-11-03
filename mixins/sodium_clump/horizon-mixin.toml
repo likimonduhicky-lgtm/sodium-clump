@@ -1,0 +1,46 @@
+[mod]
+id = "sodium_clump"
+version = "0.1.0"
+name = "Sodium Clump"
+description = "Extra visual options and a cleaner settings experience (Sodium Extra + Reese's Sodium Options style) for Horizon."
+authors = ["Community"]
+
+[compatibility]
+horizon_revision = "ba6344a59cb9e755b730dcf02285fc0d33b97d3c"
+horizon_mixins_revision = "d9c83d7"
+
+# ---------------------------------------------------------------------------
+# Injections
+# After you run `python3 tools/horizon.py stage`, check target/mixins/plan.json
+# and native-hooks.json. Adjust any hook name that the plan reports as unknown.
+# ---------------------------------------------------------------------------
+
+[[injection]]
+id = "break_log"
+hook = "break_block"
+hook_version = 1
+kind = "HEAD"
+helper = "break.rs"
+bindings = [
+  { name = "pos", ty = "BlockPos", value = "pos" }
+]
+
+[[injection]]
+id = "client_frame"
+hook = "frame"
+hook_version = 1
+kind = "HEAD"
+helper = "frame.rs"
+bindings = [
+  { name = "game", ty = "&mut crate::game::Game<'_>", value = "&mut *self" }
+]
+
+[[injection]]
+id = "hud"
+hook = "hud"
+hook_version = 1
+kind = "HEAD"
+helper = "hud.rs"
+bindings = [
+  { name = "game", ty = "&mut crate::game::Game<'_>", value = "&mut *self" }
+]
