@@ -1,12 +1,12 @@
 [mod]
 id = "sodium_clump"
-version = "0.1.0"
+version = "0.1.1"
 name = "Sodium Clump"
 description = "Extra visual options and a cleaner settings experience (Sodium Extra + Reese's Sodium Options style) for Horizon."
 authors = ["Community"]
 
 [compatibility]
-horizon_revision = "ba6344a59cb9e755b730dcf02285fc0d33b97d3c"
+horizon_revision = "f42ef42"
 horizon_mixins_revision = "d9c83d7"
 
 # ---------------------------------------------------------------------------
